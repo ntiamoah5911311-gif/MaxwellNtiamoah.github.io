@@ -497,7 +497,120 @@
     footer span {
       color: var(--gold-light);
     }
+/* ================= EXPERIENCE TIMELINE ================= */
 
+.experience-section {
+  background: #f5f6f4;
+}
+
+.experience-timeline {
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  padding-left: 40px;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #c9a227;
+}
+
+.experience-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 35px;
+  margin-bottom: 45px;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #12372a;
+  border: 3px solid #c9a227;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.experience-year {
+  color: #1f6f50;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding-top: 2px;
+}
+
+.experience-content {
+  background: #ffffff;
+  padding: 28px 30px;
+  border-left: 4px solid #1f6f50;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.experience-content h3 {
+  color: #12372a;
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.experience-content h4 {
+  color: #c9a227;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.experience-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.experience-content li {
+  color: #667085;
+  margin-bottom: 7px;
+  font-size: 0.94rem;
+}
+
+.experience-content strong {
+  color: #12372a;
+}
+
+
+/* ================= EXPERIENCE MOBILE ================= */
+
+@media (max-width: 850px) {
+
+  .experience-timeline {
+    padding-left: 28px;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 35px;
+  }
+
+  .experience-item::before {
+    left: -25px;
+  }
+
+  .experience-year {
+    font-size: 0.8rem;
+  }
+
+  .experience-content {
+    padding: 22px;
+  }
+
+}
     /* ================= MOBILE ================= */
 
     @media (max-width: 850px) {
@@ -843,7 +956,296 @@
 
 </section>
 
+<!-- ================= EXPERIENCE ================= -->
 
+<section class="experience-section" id="experience">
+
+  <div class="section-heading">
+
+    <div class="section-label">
+      Professional Experience
+    </div>
+
+    <h2>
+      Experience across ICT, examinations and technology.
+    </h2>
+
+    <p>
+      A professional journey combining ICT systems management,
+      examinations administration, electoral technology and
+      continuous digital innovation.
+    </p>
+
+  </div>
+
+
+  <div class="experience-timeline">
+
+
+    <!-- DISTRICT IT OFFICER -->
+
+    <div class="experience-item">
+
+      <div class="experience-year">
+        2018 — Present
+      </div>
+
+      <div class="experience-content">
+
+        <h3>
+          District IT Officer
+        </h3>
+
+        <h4>
+          Ministry of Education, Ghana
+        </h4>
+
+        <ul>
+          <li>
+            Manage and maintain IT infrastructure across multiple
+            institutions, ensuring system reliability and optimal
+            performance.
+          </li>
+
+          <li>
+            Troubleshoot hardware, software and network issues,
+            providing timely technical solutions.
+          </li>
+
+          <li>
+            Train staff on IT systems and support digital literacy
+            and operational efficiency.
+          </li>
+
+          <li>
+            Implement and monitor data backup and recovery strategies
+            to safeguard critical information.
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- DISTRICT EXAMINATIONS OFFICER -->
+
+    <div class="experience-item">
+
+      <div class="experience-year">
+        2018 — Present
+      </div>
+
+      <div class="experience-content">
+
+        <h3>
+          District Examinations Officer
+        </h3>
+
+        <h4>
+          Education Sector
+        </h4>
+
+        <ul>
+
+          <li>
+            Coordinate the internal and external conduct of examinations
+            within the district.
+          </li>
+
+          <li>
+            Support the administration and monitoring of
+            <strong>BECE</strong> and <strong>WASSCE</strong>.
+          </li>
+
+          <li>
+            Coordinate the registration of BECE candidates on
+            WAEC servers.
+          </li>
+
+          <li>
+            Support WASSCE monitoring activities within the district.
+          </li>
+
+          <li>
+            Coordinate internal examinations and related
+            examination activities.
+          </li>
+
+          <li>
+            Support the harmonization of examination questions.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- ELECTORAL COMMISSION -->
+
+    <div class="experience-item">
+
+      <div class="experience-year">
+        2016 — Present
+      </div>
+
+      <div class="experience-content">
+
+        <h3>
+          Technician
+        </h3>
+
+        <h4>
+          Electoral Commission, Ghana
+        </h4>
+
+        <ul>
+
+          <li>
+            Configure, test and deploy IT systems during electoral
+            processes.
+          </li>
+
+          <li>
+            Provide technical support for election-related hardware
+            and software.
+          </li>
+
+          <li>
+            Support voter registration and verification systems.
+          </li>
+
+          <li>
+            Train election officers in the use of IT systems and
+            equipment.
+          </li>
+
+          <li>
+            Provide technical support during registration, exhibition
+            and election periods.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- TIGO -->
+
+    <div class="experience-item">
+
+      <div class="experience-year">
+        2014
+      </div>
+
+      <div class="experience-content">
+
+        <h3>
+          Field & Radio Engineer — Intern
+        </h3>
+
+        <h4>
+          Tigo Ghana
+        </h4>
+
+        <ul>
+
+          <li>
+            Conducted field operations for installing and maintaining
+            telecommunications equipment.
+          </li>
+
+          <li>
+            Performed diagnostics and supported optimal network
+            performance.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- KNUST -->
+
+    <div class="experience-item">
+
+      <div class="experience-year">
+        2014
+      </div>
+
+      <div class="experience-content">
+
+        <h3>
+          IT Services — Intern
+        </h3>
+
+        <h4>
+          University IT Services, KNUST
+        </h4>
+
+        <ul>
+
+          <li>
+            Supported IT system maintenance, including hardware
+            and software troubleshooting.
+          </li>
+
+          <li>
+            Assisted with network configuration and optimization.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- MOFA -->
+
+    <div class="experience-item">
+
+      <div class="experience-year">
+        2013
+      </div>
+
+      <div class="experience-content">
+
+        <h3>
+          Hardware Service Team — Intern
+        </h3>
+
+        <h4>
+          Ministry of Food and Agriculture
+        </h4>
+
+        <ul>
+
+          <li>
+            Diagnosed and repaired hardware issues to maintain
+            operational efficiency.
+          </li>
+
+          <li>
+            Supported IT systems and helped minimize downtime.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
 <!-- ================= PROJECTS ================= -->
 
 <section class="projects-section" id="projects">
